@@ -87,7 +87,7 @@ uart.on("data", 0,
           _G["si7021"]=nil
            disp:firstPage()
            repeat
-               disp:drawStr(10,20,"PM2.5:"..pm25.." ug/m3") 
+               disp:drawStr(10,30,"PM2.5:"..pm25.." ug/m3") 
                disp:drawStr(10,40,"Temp:"..Temp.."'C") 
                disp:drawStr(10,50,"Humi:"..Hum.."%")         
            until disp:nextPage() == false  
